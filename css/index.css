@@ -1,0 +1,16 @@
+/* specificity 0,0,1 vs 0,0,2 */
+li > ul {
+  background-color: red;
+}
+body {
+  color: lightgreen;
+}
+body p {
+  color: blueviolet;
+}
+.orange {
+  color: orange;
+}
+.orange p span {
+  color: skyblue;
+}
