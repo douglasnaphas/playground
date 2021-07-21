@@ -180,3 +180,4 @@ TSWLatexianTemp*
 *.class
 .*.sw?
 .sw?
+.DS_Store

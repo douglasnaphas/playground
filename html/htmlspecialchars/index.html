@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>htmlspecialchars</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+    ></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <h1>p&lt;f&gt;</h1>
+    <p>a &gt;&gt; b</p>
+    <p id="p-1-id" class="p-class">p1</p>
+    <p id="p-2-id" class="p-class">p2</p>
+    <div id="show-upslider">show upslider</div>
+    <div id="upslider" hidden>
+      upslider
+      <div id="done-so-slide-up">done</div>
+    </div>
+    <br />
+    <button id="show-slide-group">show slide group</button>
+    <div hidden id="slide-group-mem-1">slide group mem 1</div>
+    <div hidden id="slide-group-mem-2">slide groop mem 2</div>
+    <button hidden id="hide-slide-group">hide slide group</button>
+
+    <br />
+    <select>
+      <option>a</option>
+      <option>b</option>
+    </select>
+    <script>
+      $("#done-so-slide-up").click(function () {
+        $("#upslider").slideUp("medium");
+      });
+      $("#show-upslider").click(function () {
+        if ($("#upslider").is(":visible")) return;
+        $("#upslider").slideDown("medium");
+      });
+      $("#show-slide-group").click(function () {
+        if (
+          $("#slide-group-mem-1, #slide-group-mem-2, #hide-slide-group").is(
+            ":visible"
+          )
+        )
+          return;
+        $(
+          "#slide-group-mem-1, #slide-group-mem-2, #hide-slide-group"
+        ).slideDown("medium");
+      });
+      $("#hide-slide-group").click(function () {
+        if (
+          $("#slide-group-mem-1, #slide-group-mem-2, #hide-slide-group").is(
+            ":hidden"
+          )
+        )
+          return;
+        $("#slide-group-mem-1, #slide-group-mem-2, #hide-slide-group").slideUp(
+          "medium"
+        );
+      });
+    </script>
+    <script src="" async defer></script>
+  </body>
+</html>
