@@ -11,5 +11,8 @@
     "url": "github.com:douglasnaphas/playground.git"
   },
   "author": "Douglas Naphas <douglasnaphas@gmail.com>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "puppeteer": "^13.4.1"
+  }
 }
