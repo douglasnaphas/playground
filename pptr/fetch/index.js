@@ -13,18 +13,18 @@ const puppeteer = require("puppeteer");
     return email;
   });
 
-  await page.evaluate(() => {
-    localStorage.setItem("a", "bee");
-  });
-  const a = await page.evaluate(() => {
-    return localStorage.getItem("a");
+  await page.evaluate((suffix) => {
+    localStorage.setItem(`a${suffix}`, "bey");
+  }, "y");
+  const ay = await page.evaluate(() => {
+    return localStorage.getItem("ay");
   });
 
   console.log("output:");
   console.log(output);
 
-  console.log("a:");
-  console.log(a);
+  console.log("ay:");
+  console.log(ay);
 
   await browser.close();
 })();
