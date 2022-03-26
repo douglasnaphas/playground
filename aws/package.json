@@ -1,7 +1,7 @@
 {
   "name": "play-dynamo",
   "version": "1.0.0",
-  "description": "Use DynamoDB APIs.",
+  "description": "Use DynamoDB APIs, and other AWS APIs, too.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
