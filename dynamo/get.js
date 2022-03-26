@@ -8,13 +8,13 @@ const getParticipantParams = {
     lib_id:
       `participant` +
       `#` +
-      `a2fbc754b9ee1dc5a793eeb2c804c5e6cf962f680909050f28a69b6cdfdbab89`,
+      `f2fbc754b9ee1dc5a793eeb2c804c5e6cf962f680909050f28a69b6cdfdbab89`,
   },
 };
 (async () => {
   try {
     const data = await db.get(getParticipantParams).promise();
-    console.log(data);
+    console.log(JSON.stringify(data));
   } catch (e) {
     console.log(e);
     process.exit(2);
