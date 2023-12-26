@@ -1,0 +1,10 @@
+{
+	"something": "with tabs",
+	"wondering": [
+		{
+			"how": "it will look",
+			"when": "jq -c is used"
+		}
+	]
+}
+

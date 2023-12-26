@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo hi...
+
+echo "another shebang..."
+
+#!/bin/bash
+
+echo "after the second shebang"
